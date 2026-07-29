@@ -1,0 +1,14 @@
+# Normalize line endings: store LF in the repo, always check out LF.
+# Guarantees the Linux VDS (and Docker build) gets LF-terminated shell scripts.
+* text=auto eol=lf
+
+# Explicit LF for files executed/parsed on Linux.
+*.sh text eol=lf
+Dockerfile text eol=lf
+
+# Binary assets — never touch line endings.
+*.webp binary
+*.woff2 binary
+*.png binary
+*.jpg binary
+*.svg text
