@@ -39,6 +39,10 @@ yarn-error.log*
 next-env.d.ts
 /dist/
 /.wrangler/
+# vinext-generated font cache: regenerated per-environment at build time.
+# Shipping it stale bakes an absolute path from the build host and breaks
+# @font-face URLs (404) after a checkout/deploy.
+/.vinext/
 /.sites-runtime/
 /outputs/
 /work/
