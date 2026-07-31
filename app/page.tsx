@@ -736,21 +736,6 @@ export default function Home() {
       </section>
 
       <section className="section-shell workspace-section" id="included">
-        <div className="section-nav compact">
-          <a className="brand mini" href="#top">
-            <span>N</span>
-            NIGHTSHIFT
-          </a>
-          <div>
-            <a href="#space">О клубе</a>
-            <a className="active" href="#included">
-              Что внутри
-            </a>
-            <a href="#passes">Пропуска</a>
-          </div>
-          <span>02 / SPACE SYSTEM</span>
-        </div>
-
         <div className="workspace-intro" data-reveal>
           <p>ВСЁ УЖЕ ВНУТРИ ПРОПУСКА</p>
           <h2>

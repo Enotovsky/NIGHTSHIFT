@@ -4,7 +4,7 @@
   --paper: #f2f2ee;
   --paper-bright: #fafaf7;
   --ink: #171716;
-  --muted: #777771;
+  --muted: #55554f;
   --blue: #163cff;
   --blue-dark: #0b2be7;
   --line: rgba(23, 23, 22, 0.72);
@@ -28,6 +28,9 @@ body {
     var(--paper);
   color: var(--ink);
   font-family: var(--font-geist-sans), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 button,
@@ -111,7 +114,7 @@ a {
   align-items: center;
   gap: 25px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -183,7 +186,7 @@ a {
   padding-bottom: 12px;
   border-bottom: 1px solid var(--soft-line);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .hero-copy {
@@ -196,7 +199,7 @@ a {
 .hero-copy > p {
   margin: 0 0 20px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -235,7 +238,7 @@ a {
   border-top: 1px solid var(--soft-line);
   color: #51514d;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .physics-box {
@@ -288,7 +291,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.05em;
   pointer-events: none;
 }
@@ -357,7 +360,7 @@ a {
   bottom: 25px;
   max-width: 180px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   line-height: 1.55;
   text-align: right;
   pointer-events: none;
@@ -373,7 +376,7 @@ a {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 .see-more b {
@@ -421,7 +424,7 @@ a {
   align-items: center;
   gap: 28px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -445,7 +448,7 @@ a {
   border-radius: 18px;
   background: transparent;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   text-transform: uppercase;
   transition:
     background 180ms ease,
@@ -460,7 +463,7 @@ a {
 .section-nav > span {
   justify-self: end;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .about-grid {
@@ -509,7 +512,7 @@ a {
 
 .story-card > span {
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .story-card h2 {
@@ -527,8 +530,8 @@ a {
   bottom: 28px;
   left: 28px;
   margin: 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 11px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -577,7 +580,7 @@ a {
 .intro-card span {
   color: var(--blue);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .intro-card h2 {
@@ -590,8 +593,8 @@ a {
 .intro-card p {
   align-self: end;
   margin: 0;
-  color: #5a5a55;
-  font-size: 11px;
+  color: #4b4b46;
+  font-size: 14px;
   line-height: 1.65;
 }
 
@@ -621,7 +624,7 @@ a {
 
 .status-card > span {
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .status-card > strong {
@@ -634,7 +637,7 @@ a {
 .status-card > small {
   margin-top: 9px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .status-card.black {
@@ -748,6 +751,7 @@ a {
 }
 
 .workspace-section {
+  padding-top: 90px;
   padding-bottom: 110px;
 }
 
@@ -766,7 +770,7 @@ a {
 .workspace-intro > p {
   margin: 0;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .workspace-intro h2 {
@@ -780,7 +784,7 @@ a {
 
 .workspace-intro > span {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -825,7 +829,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .feature-card h3 {
@@ -840,7 +844,7 @@ a {
   max-width: 85%;
   margin: 0;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -902,7 +906,7 @@ a {
   border: 1px solid var(--ink);
   border-radius: 14px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 .pill-row span:nth-child(2) {
@@ -933,7 +937,7 @@ a {
 .fact-card > span {
   max-width: 130px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.45;
 }
 
@@ -972,7 +976,7 @@ a {
 .passes-heading > span,
 .steps-heading > span {
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .passes-heading h2 {
@@ -986,8 +990,8 @@ a {
 
 .passes-heading p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.57);
-  font-size: 11px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -1023,7 +1027,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .pass-card h3 {
@@ -1045,8 +1049,8 @@ a {
 .pass-card > p {
   min-height: 40px;
   margin: 25px 0 0;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -1062,7 +1066,7 @@ a {
 .pass-card li {
   display: flex;
   gap: 10px;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .pass-card li span {
@@ -1085,7 +1089,7 @@ a {
   background: white;
   color: var(--ink);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   transition:
     background 180ms ease,
     color 180ms ease;
@@ -1154,7 +1158,7 @@ a {
 
 .steps-grid article > span {
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .steps-grid h3 {
@@ -1167,7 +1171,7 @@ a {
   max-width: 300px;
   margin: 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.55;
 }
 
@@ -1219,7 +1223,7 @@ a {
 
 .final-content > span {
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .final-content h2 {
@@ -1243,7 +1247,7 @@ a {
   background: white;
   color: var(--ink);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
   transition:
     background 180ms ease,
     color 180ms ease,
@@ -1286,7 +1290,7 @@ footer p,
 footer > span {
   margin: 0;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
 }
 
 footer > span {
@@ -1403,7 +1407,7 @@ footer > span {
 .modal-index {
   color: var(--blue);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .booking-modal h2 {
@@ -1419,7 +1423,7 @@ footer > span {
   max-width: 410px;
   margin: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
@@ -1434,7 +1438,7 @@ footer > span {
   display: grid;
   gap: 8px;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 7px;
+  font-size: 10px;
   text-transform: uppercase;
 }
 
@@ -1452,7 +1456,7 @@ footer > span {
   outline: 0;
   background: white;
   font-family: var(--font-geist-sans), sans-serif;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .booking-modal input:focus,
@@ -1474,7 +1478,7 @@ footer > span {
   background: var(--blue);
   color: white;
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .booking-modal form > button span {
@@ -1485,7 +1489,7 @@ footer > span {
   display: block;
   margin-top: 16px;
   color: var(--muted);
-  font-size: 7px;
+  font-size: 10px;
   line-height: 1.5;
 }
 
@@ -1499,7 +1503,7 @@ footer > span {
 .booking-success > span {
   color: var(--blue);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 8px;
+  font-size: 11px;
 }
 
 .booking-success strong {
@@ -1512,7 +1516,7 @@ footer > span {
 .booking-success p {
   max-width: 420px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
